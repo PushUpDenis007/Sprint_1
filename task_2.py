@@ -10,7 +10,7 @@ class Tester:
         self.deadline = True
 
     def work_hard(self, deadline=True):
-#убрал self., что читался аргумент, а не атрибут
+#убрал self., чтобы читался аргумент, а не атрибут
         if deadline:
             print(self.name, 'Что ж, ещё часок поработаю!')
         else:
