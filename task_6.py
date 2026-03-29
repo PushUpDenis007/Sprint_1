@@ -27,10 +27,10 @@ def duplicate_remove(tickets):
                     tickets[k].remove(j)
     print(tickets)
 
-tickets_by_type = {}
 #вторая связывает уровень критичности со списком уникальных тикетов.
 #Вторая функция принимает на вход два параметра: словарь types с типами багов и словарь tickets со списком багов. 
 #Функция возвращает словарь, где уровень критичности связан со списком уникальных тикетов.
+tickets_by_type = {}
 def number_to_type(types,tickets):   
     for i in range (1,6):
        tickets_by_type[types[i]]=tickets[i]
