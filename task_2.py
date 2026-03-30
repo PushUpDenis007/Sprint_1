@@ -2,7 +2,6 @@ class Tester:
 #дописан self. к атрибутам
     def __init__(self, name):
         self.name = name
-        self.deadline = True
 
     def work_hard(self, deadline=True):
 #убрал self., чтобы читался аргумент, а не атрибут
