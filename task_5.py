@@ -11,7 +11,7 @@ class TestCase:
 
     #Метод delete_step — удаляет шаг из steps по ключу step_number, который передали в метод.
     def delete_step (self,step_number):
-        del self.steps[step_number]
+        self.steps.pop(step_number, None)
     
     #Метод set_result — устанавливает ожидаемый результат. Он помещает его в атрибут result по параметру result, который передали методу.
     def set_result (self,result):        
